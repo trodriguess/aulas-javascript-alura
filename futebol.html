@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1> Calculando pontos </h1>
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(parametro){
+		document.write(parametro);
+		pulaLinha();
+	}
+
+	var time = prompt("Entre com o nome do seu time: ");
+	var pontuacaoAntiga = prompt("Entre com a pontuação do ano passado: ");
+	var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+	var empates = parseInt(prompt("Entre com o número de empates: "));
+
+	var pontos = (vitorias * 3) + empates;
+
+	mostra("Os pontos do seu time são: " + pontos);
+	pulaLinha();
+
+	if (pontos > pontuacaoAntiga){
+		mostra("A pontuação do " + time + " está MELHOR do que o ano passado.");
+}
+	if (pontos < pontuacaoAntiga){
+		mostra("A pontuação do " + time + " está PIOR do que o ano passado.");
+}
+	if (pontos == pontuacaoAntiga){
+		mostra("A pontuação do " + time + " está IGUAL ao ano passado.");
+}
+
+</script>

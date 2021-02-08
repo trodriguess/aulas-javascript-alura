@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1> Calculando IMC </h1>
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(parametro){
+		document.write(parametro);
+		pulaLinha();
+	}
+
+
+	var nome = prompt("Informa seu nome: ");
+	var altura = prompt("Informa sua altura: ");
+	var peso = prompt("Informa seu peso: ");
+	var imc = peso / (altura * altura);	
+
+	mostra(nome + ", o seu IMC calculado é: " + Math.round(imc));
+
+
+pulaLinha();
+
+	if (imc < 18.5){
+		mostra("Você está abaixo do recomendado.");
+	}
+	if (imc > 35){
+		mostra("Você está acima do recomendado.");
+	}
+	else {
+		mostra("Você está com o peso ideal.");
+	}
+
+</script>

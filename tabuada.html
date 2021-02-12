@@ -1,0 +1,29 @@
+<meta charset="UTF=8">
+
+<h1>TABUADA</h1>
+
+<script type="text/javascript">
+	
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(paramentro){
+		document.write(paramentro);
+		pulaLinha();
+	}
+
+	var dividendo = 1;
+	var divisor = 1;
+
+	for (var dividendo = 1; dividendo <= 10; dividendo++){
+		mostra("Tabuada do " + dividendo + ":");
+		for (var divisor =1; divisor <=10; divisor++){
+			mostra(dividendo + " x " + divisor + " = " + (dividendo*divisor));	
+		}
+		pulaLinha();
+	}
+
+
+</script>

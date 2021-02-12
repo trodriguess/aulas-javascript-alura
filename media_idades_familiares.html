@@ -1,0 +1,30 @@
+<meta charset="UTF=8">
+
+<h1>MEDIA DE IDADES</h1>
+
+<script type="text/javascript">
+	
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(paramentro){
+		document.write(paramentro);
+		pulaLinha();
+	}
+
+var totalPessoas = parseInt(prompt("Digite a quantidade de pessoas: "));
+var somaIdades = 0;
+var media = 0;
+
+for (var i = 1; i <= totalPessoas; i++){
+	idades = parseInt(prompt("Digite a idade da pessoa " + i + ": "));
+	somaIdades += idades;
+
+}
+var media = somaIdades / totalPessoas;
+mostra("A média de idades de todas as " + totalPessoas + " pessoas é: " + media);
+
+
+</script>
